@@ -153,4 +153,5 @@ exec --no-startup-id sleep 3 && xfce4-power-manager
 exec --no-startup-id light-locker
 exec --no-startup-id clipit
 exec --no-startup-id syncthing -no-browser
+exec --no-startup-id nm-applet
 exec_always feh --bg-scale /home/landmaj/DNM/wallpaper.jpg
