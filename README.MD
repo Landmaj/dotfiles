@@ -26,12 +26,12 @@ sudo apt-get install ubuntu-drivers-common mesa-utils mesa-utils-extra intel-mic
 
 ### Basic tools:
 ```
-sudo apt-get pcmanfm gnome-terminal rofi xbacklight arandr xfce4-power-manager light-locker feh clipit network-manager-gnome bluez blueman pavucontrol tlp
+sudo apt-get pcmanfm gnome-terminal rofi xbacklight arandr xfce4-power-manager light-locker clipit network-manager-gnome
 ```
 
 ### Some apps from Ubuntu repos:
 ```
-sudo apt-get install vlc syncthing libreoffice keepassxc
+sudo apt-get install vlc syncthing libreoffice keepassxc nomacs tlp pavucontrol bluez blueman feh
 ```
 
 ### Other apps:
