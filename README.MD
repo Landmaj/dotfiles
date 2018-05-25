@@ -14,7 +14,7 @@ Setup WiFi with this command:
 nmcli dev wifi connect SSID password PASSWORD
 ```
 
-### Basic stuff to get a working desktop environment:
+### Basic stuff to get a working i3:
 ```
 sudo apt-get install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings i3 compton xorg xserver-xorg
 ```
@@ -24,26 +24,42 @@ sudo apt-get install lightdm lightdm-gtk-greeter lightdm-gtk-greeter-settings i3
 sudo apt-get install ubuntu-drivers-common mesa-utils mesa-utils-extra intel-microcode
 ```
 
-### Basic tools:
+### Basic utility tools (file manager, terminal, app launcher, screen locker, clipboard, GUI WiFi config, GUI power settings):
 ```
 sudo apt-get pcmanfm gnome-terminal rofi xbacklight arandr xfce4-power-manager light-locker clipit network-manager-gnome
 ```
 
-### Some apps from Ubuntu repos:
+### Multimedia apps (video player, image viewer, volume control):
 ```
-sudo apt-get install vlc syncthing libreoffice keepassxc nomacs tlp pavucontrol bluez blueman feh
+sudo apt-get intsall vlc nomacs pavucontrol feh
+```
+
+### Some apps from Ubuntu repos (bluetooth, etc):
+```
+sudo apt-get install syncthing libreoffice keepassxc tlp bluez blueman
 ```
 
 ### Other apps:
-Micro (curl https://getmic.ro | bash)  
-Chromium VAAPI (https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta)  
+My favorite text editor:
+```
+Micro (curl https://getmic.ro | bash)
+```
+Chromium with hardware video decoding enabled:
+```
+(Chromium VAAPI)[https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta]
+```
+Fan speed control:
+```
+(NBFC)[https://github.com/hirschmann/nbfc/wiki/First-steps]
+```
+Keeboard backlight script. Put it somewhere in PATH, xfce4-power-manager will take care of the rest
+```https://unix.stackexchange.com/a/367508```  
+Snaps:
 ```
 sudo snap install spotify
 sudo snap install pycharm-professional --classic
 sudo snap install intellij-idea-community --classic --edge
 ``` 
-NBFC (https://github.com/hirschmann/nbfc/wiki/First-steps)  
-Keyboad backlight (https://unix.stackexchange.com/a/367508)  
 
 
 ### Themes
