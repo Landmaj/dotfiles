@@ -42,18 +42,23 @@ sudo apt-get install syncthing libreoffice keepassxc tlp bluez blueman
 ### Other apps:
 My favorite text editor:
 ```
-Micro (curl https://getmic.ro | bash)
+Micro
+curl https://getmic.ro | bash
 ```
 Chromium with hardware video decoding enabled:
 ```
-(Chromium VAAPI)[https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta]
+Chromium VAAPI
+https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
 ```
 Fan speed control:
 ```
-(NBFC)[https://github.com/hirschmann/nbfc/wiki/First-steps]
+NBFC
+https://github.com/hirschmann/nbfc/wiki/First-steps
 ```
-Keeboard backlight script. Put it somewhere in PATH, xfce4-power-manager will take care of the rest
-```https://unix.stackexchange.com/a/367508```  
+Keyboard backlight script. Put it somewhere in PATH, xfce4-power-manager will take care of the rest
+```
+https://unix.stackexchange.com/a/367508
+```  
 Snaps:
 ```
 sudo snap install spotify
