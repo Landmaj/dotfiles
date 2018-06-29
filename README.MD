@@ -41,7 +41,7 @@ sudo apt-get install cups cups-bsd cups-client cups-filters foomatic-db-compress
 
 ### Some apps from Ubuntu repos (bluetooth, etc):
 ```
-sudo apt-get install syncthing libreoffice keepassxc tlp bluez blueman gnome-system-monitor gnome-system-tools firefox
+sudo apt-get install syncthing libreoffice keepassxc tlp bluez blueman gnome-system-monitor gnome-system-tools firefox gnome-calculator gnome-calendar
 ```
 
 ### Other apps:
