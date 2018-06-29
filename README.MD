@@ -26,7 +26,7 @@ sudo apt-get install ubuntu-drivers-common mesa-utils mesa-utils-extra intel-mic
 
 ### Basic utility tools (file manager, terminal, app launcher, screen locker, clipboard, GUI WiFi config, GUI power settings):
 ```
-sudo apt-get pcmanfm gnome-terminal rofi xbacklight arandr xfce4-power-manager light-locker clipit network-manager-gnome policykit-desktop-privileges policykit-1-gnome ntp gedit
+sudo apt-get pcmanfm gnome-terminal rofi xbacklight arandr xfce4-power-manager light-locker clipit network-manager-gnome policykit-desktop-privileges policykit-1-gnome ntp gedit file-roller
 ```
 
 ### Multimedia apps (video player, image viewer, volume control):
