@@ -26,12 +26,17 @@ sudo apt-get install ubuntu-drivers-common mesa-utils mesa-utils-extra intel-mic
 
 ### Basic tools:
 ```
-sudo apt-get pcmanfm gnome-terminal rofi xbacklight arandr xfce4-power-manager light-locker clipit network-manager-gnome
+sudo apt-get pcmanfm gnome-terminal rofi xbacklight arandr xfce4-power-manager light-locker clipit network-manager-gnome policykit-desktop-privileges policykit-1-gnome ntp gedit
 ```
 
 ### Some apps from Ubuntu repos:
 ```
-sudo apt-get install vlc syncthing libreoffice keepassxc nomacs tlp pavucontrol bluez blueman feh
+sudo apt-get install vlc syncthing libreoffice keepassxc nomacs tlp pavucontrol bluez blueman feh gnome-system-monitor gnome-system-tools xbacklight
+```
+
+# Printing
+```
+sudo apt-get install cups cups-bsd cups-client cups-filters foomatic-db-compressed-ppds openprinting-ppds bluez-cups hplip printer-driver-brlaser printer-driver-c2esp printer-driver-foo2zjs printer-driver-gutenprint printer-driver-hpcups rinter-driver-min12xxw printer-driver-pnm2ppa printer-driver-postscript-hp printer-driver-ptouch printer-driver-pxljr printer-driver-sag-gdi printer-driver-splix system-config-printer-gnome
 ```
 
 ### Other apps:

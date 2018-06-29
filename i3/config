@@ -25,6 +25,9 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
+# disable mouse focus
+focus_follows_mouse no
+
 # move window:
 bindsym $mod+Shift+Left move left
 bindsym $mod+Shift+Down move down
@@ -154,4 +157,6 @@ exec --no-startup-id light-locker
 exec --no-startup-id clipit
 exec --no-startup-id syncthing -no-browser
 exec --no-startup-id nm-applet
+exec --no-startup-id /usr/bin/python3 /home/landmaj/.local/bin/play-with-mpv
+exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 exec_always feh --bg-scale /home/landmaj/DNM/wallpaper.jpg
