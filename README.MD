@@ -71,6 +71,11 @@ sudo snap install pycharm-professional --classic
 sudo snap install intellij-idea-community --classic --edge
 ``` 
 
+Update kerne;:
+```
+https://github.com/GM-Script-Writer-62850/Ubuntu-Mainline-Kernel-Updater
+```
+
 
 ### Themes
 ```
