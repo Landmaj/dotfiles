@@ -1,8 +1,18 @@
+RED=`tput setaf 1`
+GREEN=`tput setaf 2`
+YELLOW=`tput setaf 3`
+RESET=`tput sgr0`
+
+if [ "$EUID" -ne 0 ]
+  then echo -e  "${RED}Installing packages requires root privileges${RESET}"
+  exit
+fi
+
 cd /tmp
 
 # EXTERNAL REPOSITORIES
 # =====================
-
+echo -e  "${YELLOW}Adding external repositories...${RESET}"
 # GOOGLE CHROME
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add - 
 sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
@@ -16,10 +26,12 @@ echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-relea
 add-apt-repository ppa:jasonpleau/rofi
 
 # UPDATE REPOSITORIES TO APPLY CHANGES
+echo -e  "${YELLOW}Updating repositories...${RESET}"
 apt-get update
 
+echo -e  "${YELLOW}Installing i3wm...${RESET}"
 # MINIMAL WORKING DESKTOP ENVIRONMENT
-apt install -y apt install lightdm 
+apt install -y lightdm 
 apt install -y lightdm-gtk-greeter 
 apt install -y lightdm-gtk-greeter-settings 
 apt install -y i3 
@@ -28,12 +40,14 @@ apt install -y xorg
 apt install -y xserver-xorg
 
 # DRIVERS
+echo -e  "${YELLOW}Installing drivers...${RESET}"
 apt install -y ubuntu-drivers-common 
 apt install -y mesa-utils 
 apt install -y mesa-utils-extra 
 apt install -y intel-microcode
 
 # SYSTEM TOOLS
+echo -e  "${YELLOW}Installing system apps..${RESET}"
 apt install -y xbacklight
 apt install -y clipit 
 apt install -y arandr 
@@ -55,6 +69,7 @@ apt install -y lxappearance
 apt install -y qt4-qtconfig
 
 # UTILITY
+echo -e  "${YELLOW}Installing utility apps...${RESET}"
 apt install -y pcmanfm
 apt install -y nautilus
 apt install -y gnome-terminal 
@@ -75,12 +90,14 @@ apt install -y transmission
 apt install -y mpv
 
 # MULTIMEDIA
+echo -e  "${YELLOW}Installing multimedia apps...${RESET}"
 apt install -y vlc 
 apt install -y nomacs
 apt install -y pavucontrol
 apt install -y feh
 
 # PRINTING
+echo -e  "${YELLOW}Installing packages required for printing...${RESET}"
 apt install -y cups 
 apt install -y cups-bsd 
 apt install -y cups-client 
@@ -104,6 +121,7 @@ apt install -y printer-driver-splix
 apt install -y system-config-printer-gnome
 
 # SNAPS
+echo -e  "${YELLOW}Installing snaps...${RESET}"
 snap install spotify
 snap install pycharm-professional --classic --edge
 snap install intellij-idea-community --classic --edge
@@ -112,3 +130,4 @@ snap install intellij-idea-community --classic --edge
 mv ~/home/$USER/.config/kbdbacklight /usr/local/bin/
 chmod +x /usr/local/bin/kbdbacklight
 
+echo -e "${GREEN}All done!${RESET}"
