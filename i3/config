@@ -150,7 +150,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # i3status bar
 bar {
-  	status_command i3status -c /home/landmaj/.config/i3/i3status.conf
+  	status_command i3status -c /home/$USER/.config/i3/i3status.conf
 	colors {
 		background $bg-color
 	    	separator #757575
@@ -166,12 +166,12 @@ for_window [class="^.*"] border pixel 1
 new_window 1pixel
 
 # STARTUP APPLICATIONS
-exec --no-startup-id compton -f --config /home/landmaj/.config/compton.conf
+exec --no-startup-id compton -f --config /home/$USER/.config/compton.conf
 exec --no-startup-id sleep 3 && xfce4-power-manager
 exec --no-startup-id light-locker
 exec --no-startup-id clipit
 exec --no-startup-id syncthing -no-browser
 exec --no-startup-id nm-applet
-exec --no-startup-id /usr/bin/python3 /home/landmaj/.local/bin/play-with-mpv
+exec --no-startup-id /usr/bin/python3 /home/$USER/.local/bin/play-with-mpv
 exec --no-startup-id /usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
-exec_always feh --bg-scale /home/landmaj/DNM/wallpaper.jpg
+exec_always feh --bg-scale /home/$USER/DNM/wallpaper.jpg
