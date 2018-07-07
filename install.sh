@@ -25,6 +25,9 @@ echo "deb http://debian.sur5r.net/i3/ $(grep '^DISTRIB_CODENAME=' /etc/lsb-relea
 # rofi
 add-apt-repository ppa:jasonpleau/rofi
 
+# Python
+add-apt-repository ppa:deadsnakes/ppa
+
 # UPDATE REPOSITORIES TO APPLY CHANGES
 echo -e  "${YELLOW}Updating repositories...${RESET}"
 apt-get update
@@ -119,6 +122,11 @@ apt install -y printer-driver-pxljr
 apt install -y printer-driver-sag-gdi 
 apt install -y printer-driver-splix 
 apt install -y system-config-printer-gnome
+
+# PYTHON
+apt install -y python3.5
+apt install -y python3.6
+apt install -y python3.7
 
 # SNAPS
 echo -e  "${YELLOW}Installing snaps...${RESET}"
