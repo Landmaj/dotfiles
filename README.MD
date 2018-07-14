@@ -1,24 +1,27 @@
-i3 on Ubuntu Server from scratch
+i3 on Ubuntu Mate
 --------------------------------
+Tested on 18.04 (12 June 2018)
 
-WiFi on Ubuntu doesn't work on my laptop for some reason, so this packages must be installed manually:
-```
-sudo dpkg -i *.dpkg  
-wireless-tools
-wpa-supplicant
-network-manager
-``` 
+Install git, clone this repository and run `install.sh`.
+This will install i3 and some other useful applications.
 
-Setup WiFi with this command:  
+After that, run dconf-editor and in
+`org > mate > desktop > session > required-components`
+change `marco` to `i3`. Head up one level and remove
+`file-manager` from `required-component-list`.
+
+Move i3 config file to `~/.config/i3`.
+i3bar is disabled in the configuration file and I use Mate panel instead,
+so install this applet to get workspace indicator:
+[mate-i3-applet](https://github.com/city41/mate-i3-applet)
+
+Disable conflicting superkey binding:
 ```
-nmcli dev wifi connect SSID password PASSWORD
+gsettings set org.mate.mate-menu hot-key ''
+gsettings set com.solus-project.brisk-menu hot-key ''
 ```
 
-Chromium with hardware video decoding enabled:
-```
-Chromium VAAPI
-https://launchpad.net/~saiarcot895/+archive/ubuntu/chromium-beta
-```
+###Additional things:
 
 Fan speed control:
 ```
@@ -37,10 +40,6 @@ https://github.com/vinceliuice/vimix-gtk-themes
 https://github.com/vinceliuice/vimix-icon-theme  
 ~/.Xresources -> Xcursor.theme: Paper-Vimix  
 ```
-You can change themes using lxappearance and qt4-qtconfig
-
-Detailed video on i3 customization:  
-https://www.youtube.com/watch?v=ARKIwOlazKI
 
 GTK cursor in Chromium:
 ```
@@ -51,5 +50,4 @@ GTK cursor in Chromium:
 Fonts:
 ```
 https://github.com/be5invis/Iosevka
-https://github.com/supermarin/YosemiteSanFranciscoFont
 ```
