@@ -1,6 +1,6 @@
 i3 on Ubuntu Mate
 --------------------------------
-Tested on 18.04 (12 June 2018)
+Tested on 18.04 (23 July 2018)
 
 Install git, clone this repository and run `install.sh`.
 This will install i3, configure Mate and also install 
