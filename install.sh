@@ -5,7 +5,7 @@ apt remove -y orca
 apt remove -y xzoom
 rm -rf /usr/share/applications/screensavers
 
-# BASIC I3
+# BASIC i3
 
 apt install -y i3-wm
 apt install -y rofi
@@ -55,6 +55,7 @@ snap install pycharm-professional --classic
 snap install intellij-idea-community --classic
 snap install sublime-text --classic
 snap install insomnia
+snap install docker
 
 # AUTOSTART
 USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
