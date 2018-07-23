@@ -5,6 +5,17 @@ apt remove -y orca
 apt remove -y xzoom
 rm -rf /usr/share/applications/screensavers
 
+# BASIC I3
+
+apt install -y i3-wm
+apt install -y rofi
+
+# DISABLE META KEY SHORTCUT IN MATE
+
+gsettings set org.mate.mate-menu hot-key ''
+gsettings set com.solus-project.brisk-menu hot-key ''
+
+
 apt install -y ntp
 apt install -y dconf-editor
 apt install -y arandr
