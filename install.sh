@@ -10,10 +10,15 @@ rm -rf /usr/share/applications/screensavers
 apt install -y i3-wm
 apt install -y rofi
 
-# DISABLE META KEY SHORTCUT IN MATE
+# GSETTINGS
 
 gsettings set org.mate.mate-menu hot-key ''
 gsettings set com.solus-project.brisk-menu hot-key ''
+gsettings set org.mate.power-manager kbd-backlight-battery-reduce false
+gsettings set org.mate.power-manager idle-dim-battery false
+gsettings set org.mate.power-manager backlight-battery-reduce false
+gsettings set org.mate.desktop.session required-components-list ['windowmanager', 'panel']
+gsettings set org.mate.desktop.session.required-components windowmanager 'i3'
 
 
 apt install -y ntp
