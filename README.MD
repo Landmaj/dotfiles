@@ -14,25 +14,13 @@ so install this applet to get workspace indicator:
 Fan speed control:
 ```
 NBFC
+Run nbfc.sh from this repo
 https://github.com/hirschmann/nbfc/wiki/First-steps
 ```
 
 Mainline kernel:
 ```
 https://github.com/GM-Script-Writer-62850/Ubuntu-Mainline-Kernel-Updater
-```
-
-Themes:
-```
-https://github.com/vinceliuice/vimix-gtk-themes  
-https://github.com/vinceliuice/vimix-icon-theme  
-~/.Xresources -> Xcursor.theme: Paper-Vimix  
-```
-
-GTK cursor in Chromium:
-```
-1. cd ~/.icons
-2. ln -s <name of the theme you use> default
 ```
 
 Fonts:
