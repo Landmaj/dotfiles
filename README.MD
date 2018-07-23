@@ -10,7 +10,6 @@ i3bar is disabled in the configuration file and I use Mate panel instead,
 so install this applet to get workspace indicator:
 [mate-i3-applet](https://github.com/city41/mate-i3-applet)
 
-```
 
 Fan speed control:
 ```
