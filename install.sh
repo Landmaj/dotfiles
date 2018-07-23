@@ -55,3 +55,7 @@ snap install pycharm-professional --classic
 snap install intellij-idea-community --classic
 snap install sublime-text --classic
 snap install insomnia
+
+# AUTOSTART
+USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
+cp -r ./autostart $USER_HOME/.config/
