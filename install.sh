@@ -17,8 +17,8 @@ gsettings set com.solus-project.brisk-menu hot-key ''
 gsettings set org.mate.power-manager kbd-backlight-battery-reduce false
 gsettings set org.mate.power-manager idle-dim-battery false
 gsettings set org.mate.power-manager backlight-battery-reduce false
-gsettings set org.mate.desktop.session required-components-list ['windowmanager', 'panel']
-gsettings set org.mate.desktop.session.required-components windowmanager 'i3'
+gsettings set org.mate.session required-components-list "['windowmanager', 'panel']"
+gsettings set org.mate.session.required-components windowmanager 'i3'
 
 
 apt install -y ntp
