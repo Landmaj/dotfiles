@@ -9,7 +9,7 @@ sudo cp ./Linux/*.service /etc/systemd/system/
 sudo systemctl enable nbfc --now
 
 echo "Recommended config:
-/opt/nbfc/nbfc.exe config -r
+/opt/nbfc/nbfc.exe config -r"
 
 echo "Use: /opt/nbfc/nbfc.exe config --set \"Asus Zenbook UX310UA\""
 echo "/opt/nbfc/nbfc.exe start -e"
