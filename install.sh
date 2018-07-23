@@ -59,3 +59,12 @@ snap install insomnia
 # AUTOSTART
 USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
 cp -r ./autostart $USER_HOME/.config/
+
+# THEMES
+cd /tmp
+git clone https://github.com/vinceliuice/vimix-gtk-themes.git
+git clone https://github.com/vinceliuice/vimix-icon-theme
+cd /tmp/vimix-icon-theme
+bash ./Installer.sh
+cd /tmp/vimix-gtk/theme
+bash ./Vimix-installer
