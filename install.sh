@@ -55,7 +55,14 @@ snap install pycharm-professional --classic
 snap install intellij-idea-community --classic
 snap install sublime-text --classic
 snap install insomnia
-snap install docker
+
+
+# DOCKER
+addgroup --system docker
+adduser $USER docker
+newgrp docker
+snap install docker --classic
+
 
 # AUTOSTART
 USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
