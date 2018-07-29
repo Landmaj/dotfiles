@@ -49,6 +49,14 @@ apt install -y python3.5
 apt install -y python3.6
 apt install -y python3.7
 
+apt install -y python3-venv
+cd /tmp
+curl https://raw.githubusercontent.com/mitsuhiko/pipsi/master/get-pipsi.py | python3 - --src=git+https://github.com/mitsuhiko/pipsi.git\#egg=pipsi
+echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
+source ~/.bashrc
+
+pipsi install flake8
+
 
 # SNAPS
 snap install spotify
