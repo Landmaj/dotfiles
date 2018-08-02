@@ -86,6 +86,9 @@ docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v porta
 USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
 cp -r ./autostart $USER_HOME/.config/
 
+
+# ALIASES
+
 echo "\n" >> $USER_HOME/.bashrc
 echo "alias venv=\"source $PWD/venv.sh\"" >> $USER_HOME/.bashrc
 echo "alias gitlog=\"git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit\"" >> $USER_HOME/.bashrc
