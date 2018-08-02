@@ -103,4 +103,4 @@ bash ./Installer.sh
 cd /tmp/vimix-gtk/theme
 bash ./Vimix-installer
 
-apt get upgrade
+apt upgrade -y
