@@ -1,4 +1,10 @@
 #!/usr/bin/env bash
+
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root"
+  exit
+fi
+
 apt remove -y plank
 apt remove -y atril
 apt remove -y onboard onboard-common
