@@ -63,7 +63,6 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
 pipsi install flake8
-pipsi install thefuck
 
 
 # SNAPS
@@ -94,6 +93,9 @@ echo "\n" >> $USER_HOME/.bashrc
 echo "alias venv=\"source $PWD/venv.sh\"" >> $USER_HOME/.bashrc
 echo "alias gitlog=\"git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit\"" >> $USER_HOME/.bashrc
 
+
+# THEFUCK
+apt install -y thefuck
 echo "eval \$(thefuck --alias)" >> $USER_HOME/.bashrc
 
 # THEMES
