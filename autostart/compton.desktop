@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=compton
+Hidden=false
+X-MATE-Autostart-enabled=true
+Name[en_US]=compton
+Name=compton
+Comment[en_US]=
+Comment=
