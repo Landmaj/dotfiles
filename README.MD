@@ -1,6 +1,7 @@
 i3 on Ubuntu Mate
 --------------------------------
-Tested on 18.04 (23 July 2018)
+Tested on 18.04 (23 July 2018).
+It will mostly work on Ubuntu 16.04 but some modifications are necessary. For example Rofi is not in default repositories and has to be added manually.
 
 Install git, clone this repository and run `install.sh`.
 This will install i3, configure Mate and also install 
