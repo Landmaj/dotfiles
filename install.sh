@@ -63,13 +63,14 @@ echo 'export PATH="$HOME/.local/bin:$PATH"' >> ~/.bashrc
 source ~/.bashrc
 
 pipsi install flake8
+pipsi install ansible
 
 
 # SNAPS
 snap install spotify
 snap install pycharm-professional --classic
 snap install intellij-idea-community --classic
-snap install sublime-text --classic
+snap install vscode --classic
 snap install insomnia
 
 
@@ -106,5 +107,9 @@ cd /tmp/vimix-icon-theme
 bash ./Installer.sh
 cd /tmp/vimix-gtk/theme
 bash ./Vimix-installer
+
+# FIX BROKEN BLUETOOTH (bluez 5.48 is bugged)
+add-apt-repository ppa:bluetooth/bluez
+apt update
 
 apt upgrade -y
