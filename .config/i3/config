@@ -13,8 +13,7 @@ bindsym $mod+Return exec mate-terminal
 bindsym $mod+Shift+q kill
 
 # start rofi (a program launcher)
-bindsym $mod+d exec --no-startup-id rofi -show drun -font "System San Francisco Display 18"
-
+bindsym $mod+d exec --no-startup-id rofi -show drun -show-icons -theme onedark
 # change focus:
 bindsym $mod+Left focus left
 bindsym $mod+Down focus down
