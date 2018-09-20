@@ -55,6 +55,7 @@ apt install -y transmission
 apt install -y vlc
 apt install -y pgcli
 apt install -y vifm
+apt install -y calibre
 
 # GOOGLE CHROME
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
