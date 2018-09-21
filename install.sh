@@ -92,6 +92,7 @@ source ~/.bashrc
 pipsi install flake8
 pipsi install ansible
 pipsi install pi3-switch
+pipsi install gitup
 
 # SNAPS
 snap install spotify
