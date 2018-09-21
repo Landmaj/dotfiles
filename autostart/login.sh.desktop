@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=~/dotfiles/login.sh
+Exec=~/bin/login
 Hidden=false
 X-MATE-Autostart-enabled=true
 Name[en_US]=kbd backlight
