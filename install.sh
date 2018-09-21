@@ -28,8 +28,10 @@ gsettings set org.mate.power-manager backlight-battery-reduce false
 gsettings set org.mate.session required-components-list "['windowmanager', 'panel']"
 gsettings set org.mate.session.required-components windowmanager 'i3'
 
-# AUTOSTART
+# USER HOME DIRECTORY
 USER_HOME=$(getent passwd $SUDO_USER | cut -d: -f6)
+
+# AUTOSTART
 cp -r ./autostart $USER_HOME/.config/
 
 # CONFIG FILES
@@ -37,8 +39,8 @@ cp -r ./config $USER_HOME/
 
 # ALIASES
 echo "\n" >> $USER_HOME/.bashrc
+echo "alias vifm=\"source $USER_HOME/bin/vf"
 echo "alias venv=\"source $PWD/venv.sh\"" >> $USER_HOME/.bashrc
-echo "alias gitlog=\"git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit\"" >> $USER_HOME/.bashrc
 
 # BASIC APPLICATIONS
 apt install -y ntp

@@ -1,0 +1,8 @@
+#!/bin/bash
+if [ -f ~/.config/vifm/lastdir ]; then
+    rm ~/.config/vifm/lastdir
+fi
+/usr/bin/vifm "$@"
+if [ -f ~/.config/vifm/lastdir ]; then
+    cd `cat ~/.config/vifm/lastdir`
+fi
