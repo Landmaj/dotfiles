@@ -113,6 +113,16 @@ docker run -d -p 9000:9000 -v /var/run/docker.sock:/var/run/docker.sock -v porta
 apt install -y thefuck
 echo "eval \$(thefuck --alias)" >> $USER_HOME/.bashrc
 
+# VIM
+apt install -y vim-gtk
+git clone --depth=1 https://github.com/amix/vimrc.git $USER_HOME/.vim_runtime
+bash  $USER_HOME/.vim_runtime/install_awesome_vimrc.sh
+echo 'augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
+  autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
+augroup END' >> $USER_HOME/.vimrc
+
 # THEMES
 cd /tmp
 git clone https://github.com/vinceliuice/vimix-gtk-themes.git
