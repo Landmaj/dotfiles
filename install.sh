@@ -37,10 +37,13 @@ cp -r ./autostart $USER_HOME/.config/
 # CONFIG FILES
 cp -r ./config $USER_HOME/
 
+# SCRIPTS
+cp -r ./bin $USER_HOME/
+
 # ALIASES
 echo "\n" >> $USER_HOME/.bashrc
 echo "alias vifm=\"source $USER_HOME/bin/vf"
-echo "alias venv=\"source $PWD/venv.sh\"" >> $USER_HOME/.bashrc
+echo "alias venv=\"source $USER_HOME/bin/venv.sh\"" >> $USER_HOME/.bashrc
 
 # BASIC APPLICATIONS
 apt install -y ntp
