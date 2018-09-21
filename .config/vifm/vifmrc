@@ -429,6 +429,11 @@ nnoremap f :!caja %d &<cr>
 " Open selected directory in GUI file manager
 nnoremap F :!caja %c &<cr>
 
+" Enable horizontal split
+nnoremap rh :split<cr>
+" Enable vertical split
+nnoremap rv :vsplit<cr>
+
 " Open file in the background using its default program
 nnoremap gb :file &<cr>l
 
