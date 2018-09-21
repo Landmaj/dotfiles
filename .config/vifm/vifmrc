@@ -141,6 +141,9 @@ command! mkcd :mkdir %a | cd %a
 command! vgrep vim "+grep %a"
 command! reload :write | restart
 command Q :execute '!echo %d > ~/.config/vifm/lastdir' | quit
+command! smerge smerge %d
+command! slog smerge log %c
+command! sblame smerge blame %c
 
 " ------------------------------------------------------------------------------
 
