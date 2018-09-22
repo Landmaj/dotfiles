@@ -40,6 +40,9 @@ cp -r ./config $USER_HOME/
 # SCRIPTS
 cp -r ./bin $USER_HOME/
 
+# FONTS
+cp -r .fonts $USER_HOME/
+
 # ALIASES
 echo "\n" >> $USER_HOME/.bashrc
 echo "alias vifm=\"source $USER_HOME/bin/vf"
