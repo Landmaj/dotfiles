@@ -111,6 +111,9 @@ endif
 
 set statusline="  Hint: %z%= %A %10u:%-7g %15s %20d  "
 
+" Enable progress bar for copying and moving
+set syscalls
+
 " ------------------------------------------------------------------------------
 
 " :mark mark /full/directory/path [filename]
