@@ -66,6 +66,7 @@ apt install -y vifm
 apt install -y calibre
 apt install -y fuse-zip
 apt install -y archivemount
+apt install -y sshfs
 
 # GOOGLE CHROME
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
