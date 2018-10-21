@@ -124,15 +124,6 @@ echo 'augroup numbertoggle
   autocmd BufLeave,FocusLost,InsertEnter   * set norelativenumber
 augroup END' >> $USER_HOME/.vimrc
 
-# THEMES
-cd /tmp
-git clone https://github.com/vinceliuice/vimix-gtk-themes.git
-git clone https://github.com/vinceliuice/vimix-icon-theme
-cd /tmp/vimix-icon-theme
-bash ./Installer.sh
-cd /tmp/vimix-gtk/theme
-bash ./Vimix-installer
-
 # FIX BROKEN BLUETOOTH (bluez 5.48 is bugged)
 add-apt-repository ppa:bluetooth/bluez
 apt update
