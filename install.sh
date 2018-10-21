@@ -98,8 +98,7 @@ pipsi install gitup
 # SNAPS
 snap install spotify
 snap install pycharm-professional --classic
-snap install intellij-idea-community --classic
-snap install clion --classic
+snap install goland --classic
 snap install insomnia
 
 # DOCKER
