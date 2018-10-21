@@ -23,8 +23,3 @@ Mainline kernel:
 ```
 https://github.com/GM-Script-Writer-62850/Ubuntu-Mainline-Kernel-Updater
 ```
-
-Fonts:
-```
-https://github.com/be5invis/Iosevka
-```
